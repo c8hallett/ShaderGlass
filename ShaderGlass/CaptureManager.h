@@ -7,8 +7,8 @@ struct CaptureOptions
     HMONITOR     monitor {0};
     HWND         captureWindow {0};
     HWND         outputWindow {0};
-    float        pixelWidth {3.0f};
-    float        pixelHeight {3.0f};
+    float        pixelWidth {1.0f};
+    float        pixelHeight {1.0f};
     float        aspectRatio {1.0f};
     unsigned     presetNo {0};
     unsigned     frameSkip {0};

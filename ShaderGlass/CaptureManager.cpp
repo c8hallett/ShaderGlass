@@ -14,6 +14,9 @@ using namespace std;
 using namespace util;
 using namespace util::uwp;
 
+/*
+* Class repsonsible for handling screengrab. We may not need anything
+*/
 class CaptureManager* CaptureManager::s_this {nullptr};
 
 CaptureManager::CaptureManager() : m_options(), m_timer(0), m_lastPreset(-1) { }
