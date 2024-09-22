@@ -83,7 +83,13 @@ private:
     static LRESULT CALLBACK WndProcProxy(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam);
     ATOM                    MyRegisterClass(HINSTANCE hInstance);
     BOOL                    InitInstance(HINSTANCE hInstance, int nCmdShow);
+    // https://learn.microsoft.com/en-us/previous-versions/windows/desktop/legacy/ms633498(v=vs.85)
+    // scans for other windows
     BOOL CALLBACK           EnumWindowsProc(_In_ HWND hwnd, _In_ LPARAM lParam);
+    // https://learn.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-enumdisplaymonitors
+    // enumerates over display monitors
     BOOL CALLBACK           EnumDisplayMonitorsProc(_In_ HMONITOR hMonitor, _In_ HDC hDC, _In_ LPRECT lpRect, _In_ LPARAM lParam);
+    // https://learn.microsoft.com/en-us/windows/win32/api/winuser/nc-winuser-wndproc
+    // processes all messages sent to a window
     LRESULT CALLBACK        WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam);
 };
