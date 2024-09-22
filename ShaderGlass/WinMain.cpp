@@ -4,6 +4,9 @@
 #include "ShaderWindow.h"
 #include "ParamsWindow.h"
 #include "BrowserWindow.h"
+#include "ixwebsocket/IXConnectionState.h"
+#include "ixwebsocket/IXWebSocket.h"
+#include "ixwebsocket/IXWebSocketMessageType.h"
 
 #pragma comment(                                                                                                                           \
     linker,                                                                                                                                \
