@@ -1362,6 +1362,7 @@ bool ShaderWindow::Start()
     if(m_captureOptions.captureWindow && !IsWindow(m_captureOptions.captureWindow))
         return false;
 
+    // is true if already started before
     if(m_captureManager.IsActive())
         return false;
 
@@ -1562,7 +1563,7 @@ void ShaderWindow::UnregisterHotkeys()
 
 void ShaderWindow::Start(_In_ LPWSTR lpCmdLine, HWND paramsWindow, HWND browserWindow)
 {
-    bool autoStart  = true;
+    bool autoStart  = false;
     bool fullScreen = false;
 
     if(lpCmdLine)

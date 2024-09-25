@@ -1,0 +1,110 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/ixwebsocket-x64-windows-11.4.5-d929485a-a92f-4106-a556-ea4e81eabf4a",
+  "name": "ixwebsocket:x64-windows@11.4.5 55b38b54ffc1b8c3c308a58fe0b2c0fa8d65b5b6c476bb62ec4ea0a5738ed774",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
+    ],
+    "created": "2024-09-23T16:56:43Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "ixwebsocket",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "11.4.5",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@3ed140846f1bcff7c1abd98f10d8e28a7e458d1a",
+      "homepage": "https://github.com/machinezone/IXWebSocket",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "Lightweight WebSocket Client and Server + HTTP Client and Server",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "ixwebsocket:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "55b38b54ffc1b8c3c308a58fe0b2c0fa8d65b5b6c476bb62ec4ea0a5738ed774",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "BSD-3-Clause",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "machinezone/IXWebSocket",
+      "downloadLocation": "git+https://github.com/machinezone/IXWebSocket@v11.4.5",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "9a3b118ecec2ca39094ccbd7ec0610bbc59271a14c9e7ee0ac5d5e01a86111f33b722460ee5a32da60bfa31944acaf9a442d1655233ef252f35fd168d50ab471"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/3ed140846f1bcff7c1abd98f10d8e28a7e458d1a/portfile.cmake",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "6feceb88589f6f9b1468c20b5d65dfba0e90208915aceab9318f476fea164501"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/3ed140846f1bcff7c1abd98f10d8e28a7e458d1a/vcpkg.json",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "504cafecd11bbe20839033034e3233ea6eaf5ec4bd2e1422651b5c6c71043e81"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

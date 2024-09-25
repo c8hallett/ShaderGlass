@@ -1,0 +1,176 @@
+{
+  "$schema": "https://raw.githubusercontent.com/spdx/spdx-spec/v2.2.1/schemas/spdx-schema.json",
+  "spdxVersion": "SPDX-2.2",
+  "dataLicense": "CC0-1.0",
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "documentNamespace": "https://spdx.org/spdxdocs/mbedtls-x64-windows-3.6.1-2bc36ce8-e6a9-48e6-869f-c5ae7cecb5dc",
+  "name": "mbedtls:x64-windows@3.6.1 37d4e8084a9e37f7e81b6903d443d0c0858c457b5c52cf6eb6b42806cd2faef3",
+  "creationInfo": {
+    "creators": [
+      "Tool: vcpkg-2024-08-01-fd884a0d390d12783076341bd43d77c3a6a15658"
+    ],
+    "created": "2024-09-23T16:56:31Z"
+  },
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "GENERATES",
+      "relatedSpdxElement": "SPDXRef-binary"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-0"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-1"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-2"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-3"
+    },
+    {
+      "spdxElementId": "SPDXRef-port",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-file-4"
+    },
+    {
+      "spdxElementId": "SPDXRef-binary",
+      "relationshipType": "GENERATED_FROM",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-0",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-1",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-2",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-3",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    },
+    {
+      "spdxElementId": "SPDXRef-file-4",
+      "relationshipType": "CONTAINED_BY",
+      "relatedSpdxElement": "SPDXRef-port"
+    }
+  ],
+  "packages": [
+    {
+      "name": "mbedtls",
+      "SPDXID": "SPDXRef-port",
+      "versionInfo": "3.6.1",
+      "downloadLocation": "git+https://github.com/microsoft/vcpkg@0c5c07caa2aa3d35d64a07428dfc049a13ea6aad",
+      "homepage": "https://www.trustedfirmware.org/projects/mbed-tls/",
+      "licenseConcluded": "Apache-2.0 OR GPL-2.0-or-later",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "description": "An open source, portable, easy to use, readable and flexible SSL library",
+      "comment": "This is the port (recipe) consumed by vcpkg."
+    },
+    {
+      "name": "mbedtls:x64-windows",
+      "SPDXID": "SPDXRef-binary",
+      "versionInfo": "37d4e8084a9e37f7e81b6903d443d0c0858c457b5c52cf6eb6b42806cd2faef3",
+      "downloadLocation": "NONE",
+      "licenseConcluded": "Apache-2.0 OR GPL-2.0-or-later",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "comment": "This is a binary package built by vcpkg."
+    },
+    {
+      "SPDXID": "SPDXRef-resource-1",
+      "name": "Mbed-TLS/mbedtls",
+      "downloadLocation": "git+https://github.com/Mbed-TLS/mbedtls@v3.6.1",
+      "licenseConcluded": "NOASSERTION",
+      "licenseDeclared": "NOASSERTION",
+      "copyrightText": "NOASSERTION",
+      "checksums": [
+        {
+          "algorithm": "SHA512",
+          "checksumValue": "e7985a4e7e07328ae55fdad5212f71ac6af903f2b670c6d4bc2a8d6a4b9b7343697a2fd350a836b9425590c838615cd5b2fa851940bd137bb759fa35cd9f0ee8"
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/0c5c07caa2aa3d35d64a07428dfc049a13ea6aad/enable-pthread.patch",
+      "SPDXID": "SPDXRef-file-0",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "9ef20706e810f65ccc9a5f2a9a7f7dbb4157b593691f6f7dbcdb3c7f6d78fa09"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/0c5c07caa2aa3d35d64a07428dfc049a13ea6aad/portfile.cmake",
+      "SPDXID": "SPDXRef-file-1",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "52a4fe816a52b8ae2a41ee1ad101fbf62dc3cb02200a18d15b29f7452e82162c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/0c5c07caa2aa3d35d64a07428dfc049a13ea6aad/usage",
+      "SPDXID": "SPDXRef-file-2",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "e8380b5988ce518e9c8872e8b8022b9f9f142a271bc6b289dbe898d83132591c"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/0c5c07caa2aa3d35d64a07428dfc049a13ea6aad/vcpkg-cmake-wrapper.cmake",
+      "SPDXID": "SPDXRef-file-3",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "689eb86f3683e3092788e051034ad7723286cf9e73df67e1b09c80027e9a4546"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    },
+    {
+      "fileName": "./C:/Users/caitl/AppData/Local/vcpkg/registries/git-trees/0c5c07caa2aa3d35d64a07428dfc049a13ea6aad/vcpkg.json",
+      "SPDXID": "SPDXRef-file-4",
+      "checksums": [
+        {
+          "algorithm": "SHA256",
+          "checksumValue": "00ce86232694fc9eb906f1cec9f701921a52957cb6ba09e93e81fcba54cb23ee"
+        }
+      ],
+      "licenseConcluded": "NOASSERTION",
+      "copyrightText": "NOASSERTION"
+    }
+  ]
+}

@@ -19,7 +19,7 @@ struct CaptureOptions
     bool         transparent {false};
     bool         paused {false};
     bool         captureCursor {false};
-    std::wstring imageFile {};
+    std::wstring imageFile {L"C:\Repos\ShaderGlass\Misc\Test Pattern.png"};
     int          imageWidth {0};
     int          imageHeight {0};
     RECT         inputArea {0, 0, 0, 0};

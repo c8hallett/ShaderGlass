@@ -1,0 +1,8 @@
+Package: mbedtls
+Version: 3.6.1
+Depends: vcpkg-cmake, vcpkg-cmake-config
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 37d4e8084a9e37f7e81b6903d443d0c0858c457b5c52cf6eb6b42806cd2faef3
+Description: An open source, portable, easy to use, readable and flexible SSL library
+Status: install ok installed

@@ -4,9 +4,8 @@
 #include "ShaderWindow.h"
 #include "ParamsWindow.h"
 #include "BrowserWindow.h"
-#include "ixwebsocket/IXConnectionState.h"
-#include "ixwebsocket/IXWebSocket.h"
-#include "ixwebsocket/IXWebSocketMessageType.h"
+#include "WebSocketWrapper.h"
+#include "ixwebsocket/IXWebSocketServer.h"
 
 #pragma comment(                                                                                                                           \
     linker,                                                                                                                                \
@@ -16,6 +15,23 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
 {
     UNREFERENCED_PARAMETER(hPrevInstance);
     UNREFERENCED_PARAMETER(lpCmdLine);
+
+
+    /*
+    if (lpCmdLine)
+    {
+        int  numArgs;
+        auto cmdLine = GetCommandLineW();
+        auto args = CommandLineToArgvW(cmdLine, &numArgs);
+
+        for (int a = 0; a < numArgs; a++)
+        {
+            if (wcscmp(args[a], L"-port") == 0)
+            {
+            }
+        }
+    }
+    */
 
     if(!winrt::Windows::Foundation::Metadata::ApiInformation::IsApiContractPresent(L"Windows.Foundation.UniversalApiContract", 8))
     {
@@ -54,6 +70,12 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
 
     shaderWindow.Start(lpCmdLine, paramsWindow.m_mainWindow, browserWindow.m_mainWindow);
 
+    ix::initNetSystem();
+    ix::WebSocketServer serv(34613);
+    WebSocketWrapper wrapper(serv, shaderWindow);
+
+    wrapper.Start();
+
     while(GetMessage(&msg, nullptr, 0, 0))
     {
         if(!TranslateAccelerator(msg.hwnd, hAccelTable, &msg))
@@ -63,5 +85,6 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
         }
     }
 
+    wrapper.Stop();
     return (int)msg.wParam;
 }

@@ -2,6 +2,7 @@
 #include <winrt/Windows.Graphics.Capture.h>
 #include <windows.graphics.capture.interop.h>
 #include <windows.graphics.capture.h>
+#include <winrt/base.h>
 
 namespace util
 {
@@ -17,7 +18,8 @@ namespace util
     {
         auto interop_factory = winrt::get_activation_factory<winrt::Windows::Graphics::Capture::GraphicsCaptureItem, IGraphicsCaptureItemInterop>();
         winrt::Windows::Graphics::Capture::GraphicsCaptureItem item = { nullptr };
-        winrt::check_hresult(interop_factory->CreateForMonitor(hmon, winrt::guid_of<ABI::Windows::Graphics::Capture::IGraphicsCaptureItem>(), winrt::put_abi(item)));
+        const winrt::hresult result = interop_factory->CreateForMonitor(hmon, winrt::guid_of<ABI::Windows::Graphics::Capture::IGraphicsCaptureItem>(), winrt::put_abi(item));
+        winrt::check_hresult(result);
         return item;
     }
 }

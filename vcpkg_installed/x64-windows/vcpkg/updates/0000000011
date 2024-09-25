@@ -1,0 +1,9 @@
+Package: ixwebsocket
+Version: 11.4.5
+Depends: vcpkg-cmake, vcpkg-cmake-config, zlib
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 55b38b54ffc1b8c3c308a58fe0b2c0fa8d65b5b6c476bb62ec4ea0a5738ed774
+Description: Lightweight WebSocket Client and Server + HTTP Client and Server
+Default-Features: ssl
+Status: install ok installed

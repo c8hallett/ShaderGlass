@@ -1,0 +1,7 @@
+Package: ixwebsocket
+Feature: mbedtls
+Depends: mbedtls
+Architecture: x64-windows
+Multi-Arch: same
+Description: SSL support (mbedTLS)
+Status: install ok half-installed
